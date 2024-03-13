@@ -204,25 +204,4 @@ fabai.importNetwork = function(ai, export)
 	return network
 end
 
-testNet = fabai:createNetwork()
-
-testNet:addLayer(2)
-testNet:addLayer(3, 2)
-testNet:addLayer(2, 2)
-testNet:addLayer(2)
-
-testNet:compile()
-
-export = testNet:export()
-testNet2 = fabai:importNetwork(export)
-
-print("-- Original:  --")
-for _, val in ipairs(testNet:ask({ 0, 1 })) do
-	print(val)
-end
-print("-- Imported: --")
-for _, val in ipairs(testNet2:ask({ 0, 1 })) do
-	print(val)
-end
-
 return fabai
