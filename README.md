@@ -2,7 +2,7 @@
 
 ## FabAI (constructor) Methods
 
-- `fabai:createNetwork() -> network`: Creat a new network.
+- `fabai:createNetwork() -> network`: Create a new network.
 - `fabai:importNetwork(export) -> network`: Import a exported network.
 
 ## Network Methods
